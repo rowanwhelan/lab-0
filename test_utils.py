@@ -1,5 +1,5 @@
 ## Please fill in all the parts labeled as ### YOUR CODE HERE
-from sklearn.metrics.pairwise import cs
+from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import pytest
 from utils import *
@@ -18,7 +18,7 @@ def test_cosine_similarity():
     
     dp = dot_product(vector1, vector2)
     result = dp / (np.linalg.norm(vector1) * np.linalg.norm(vector2))
-    expected_result = cs(vector1, vector2)
+    expected_result = cosine_similarity(vector1, vector2)
     
     assert np.isclose(result, expected_result), f"Expected {expected_result}, but got {result}"
 
