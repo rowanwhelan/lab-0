@@ -28,7 +28,7 @@ def cosine_similarity(v1, v2):
     # Hint: Use `dot_product` and `np.linalg.norm`.
     '''
     ### YOUR CODE HERE
-    return dot_product(v1, v2) / (np.lingalg.norm(v1) * np.linalg.norm(v2))
+    return dot_product(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
     
 def nearest_neighbor(target_vector, vectors):
     '''
